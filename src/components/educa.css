@@ -1,0 +1,120 @@
+.education-journey {
+  font-family: 'Arial', sans-serif;
+  margin-top: -20px;
+  text-align: center;
+  padding: 2rem;
+  height: 50vh;
+}
+
+.education-heading {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 60px;
+  letter-spacing: 2px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.circle.active {
+  background-color: #f39c12;
+  transform: scale(1.1);
+}
+
+.details-box {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.details-box h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.details-box .role,
+.details-box .duration,
+.details-box .gpa {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .education-heading {
+    font-size: 1.6rem;
+    margin-top: 30px;
+  }
+  .circle-container{
+    margin-top: -10px;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+    font-size: 1rem;
+  }
+
+  .details-box {
+    width: 90%; /* Full width on mobile */
+    padding: 15px; /* Reduced padding for mobile */
+  }
+
+  .details-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .details-box .role,
+  .details-box .duration,
+  .details-box .gpa {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-heading{
+    margin-bottom: 30px;
+  }
+  .circle-container {
+    flex-direction: row; /* Stack circles vertically on very small screens */
+  }
+
+  .circle {
+    width: 85px;
+    height:65px;
+    font-size: 0.9rem;
+  }
+
+  .details-box h3 {
+    font-size: 1rem;
+  }
+}

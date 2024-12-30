@@ -1,0 +1,207 @@
+/* General Container Styles */
+.projects-container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 10px; /* Adjusted padding for better spacing */
+    height: auto; /* Allow the container to adjust based on content */
+    max-width: 1200px; /* Restrict the container width for better alignment */
+    margin-top: 80px; /* Added margin to prevent overlap with the upper section */
+}
+
+/* Heading Styles */
+.projects-container h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+/* Project Grid */
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch; /* Ensure all cards align properly */
+}
+
+/* Project Card */
+.project-card {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Space out content evenly */
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Slightly enhanced hover effect */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Image */
+.project-image {
+    height: 300px !important; /* Uniform image height */
+    width: 300px; /* Full width */
+    object-fit: cover; /* Ensure proper image scaling */
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px; /* Add spacing between image and text */
+}
+
+/* Project Title */
+.project-card h2 {
+    font-size: 1.4rem;
+    margin: 10px 0 8px;
+    color: #333;
+}
+
+/* Technologies Section */
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 10px;
+    align-items: center; /* Vertically align skills */
+    box-sizing: border-box;
+}
+
+.tech-chip {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tech-chip:hover {
+    background-color: #ff6600;
+    color: white;
+}
+
+/* Description */
+.short-description {
+    font-size: 0.95rem;
+    color: #777;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    line-height: 1.4;
+    margin-bottom: 10px; /* Space between description and icons */
+}
+
+/* Icons Section */
+.project-icons {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    align-items: center; /* Align icons vertically */
+    gap: 10px;
+    margin-top: 10px; /* Small margin between description and icons */
+    padding: 10px 0; /* Add some padding for spacing */
+    box-sizing: border-box;
+}
+
+.icon-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.icon {
+    font-size: 1.5rem; /* Icon size */
+    color: #333;
+}
+
+.icon:hover {
+    color: #ff6600; /* Highlight color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-container h1 {
+        font-size: 2rem; /* Smaller title size for mobile */
+        margin-bottom: 30px;
+    }
+
+    .projects-grid {
+        margin-top: 30px;
+        gap: 15px;
+    }
+
+    .project-card {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .project-image {
+        height: 150px; /* Reduced image height for mobile */
+    }
+
+    .short-description {
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .projects-container h1 {
+        font-size: 2.2rem; /* Slightly smaller title size for tablets */
+        margin-bottom: 40px;
+    }
+
+    .projects-grid {
+        gap: 20px;
+    }
+
+    .project-card {
+        max-width: 300px;
+    }
+
+    .project-image {
+        height: 180px; /* Adjust image height for tablets */
+    }
+
+    .short-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .projects-container h1 {
+        font-size: 2.5rem; /* Normal title size for large screens */
+    }
+
+    .projects-grid {
+        gap: 30px;
+    }
+
+    .project-card {
+        max-width: 350px;
+    }
+
+    .project-image {
+        height: 200px; /* Maintain original image height for large screens */
+    }
+
+    .short-description {
+        font-size: 1rem;
+    }
+}

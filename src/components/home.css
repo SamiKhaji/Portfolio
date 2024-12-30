@@ -1,0 +1,254 @@
+.home {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* margin-top: 200px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  height: 100vh; 
+}
+
+.hero {
+  font-weight: normal;
+  font-size: 50px;
+
+}
+
+.welcome {
+  font-size: 15px;
+  color: #888;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  margin: 10px 0;
+}
+
+.aboutme {
+  color: #888;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  width: 100%;
+}
+
+.home-container.mobile {
+  flex-direction: column; /* Stack content vertically on mobile */
+  align-items: center;
+  
+}
+
+.intro {
+  flex: 1;
+  margin-right: 30px;
+  margin-left: 50px;
+}
+.hero2{
+  font-weight: normal;
+  color: #f39c12;
+}
+
+.intro h1 p {
+  color: #f39c12;
+}
+
+.intro h3 {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 13px;
+}
+
+.resume-btn,
+.quote-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume-btn {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.quote-btn {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Hover effect for resume-btn */
+.resume-btn:hover {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+/* Hover effect for quote-btn */
+.quote-btn:hover {
+  background-color: #f39c12;
+  color: #333;
+}
+
+.profile-pic {
+  justify-content: center;
+}
+
+.profile-pic img {
+  width: 400px; /* Fixed width for desktop */
+  height: 400px; /* Maintain aspect ratio as a square */
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid rgba(255, 255, 0, 0.5); /* Transparent yellow border */
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.5); /* Initial glow */
+}
+
+/* Hover effect for stronger glow */
+.profile-pic img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 50px rgba(255, 255, 0, 0.5); /* Enhanced glow */
+}
+
+
+
+.p {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInOut 3s ease-in-out infinite;
+}
+
+/* Define keyframes for fade-in-out effect */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Mobile Media Query (up to 768px) */
+@media (max-width: 768px) {
+  .home {
+    padding: 20px;
+  }
+  .hero {
+    margin-top: 15px;
+    font-size: 30px;
+  }
+  .welcome{
+    font-size: 12px;
+  }
+  .home-container {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+  }
+
+  .profile-pic {
+    margin-top: 20px;
+    order: -1; /* Ensure image is on top for mobile */
+  }
+
+  .profile-pic img {
+    width: 200px; /* Smaller size for tablets */
+    height: 200px;
+  }
+
+  .intro {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    width: 80%;
+  }
+
+  .buttons {  
+    margin-top: 30px;  
+    flex-direction: column; /* Stack buttons vertically on mobile */  
+    align-items: center; /* Center-align buttons on mobile */  
+    justify-content: center;
+    transform:translateX(+50%);
+    width: 50%;
+    gap: 10px;  
+  }  
+
+  .resume-btn,  
+  .quote-btn {  
+    font-size: 0.9em; /* Slightly smaller font for mobile */  
+    padding: 8px 4%; /* Reduce padding */  
+    width: 65%; /* Make buttons span full width */  
+    max-width: none;  
+  }  
+}
+
+/* Smaller Mobile Screens (up to 480px) */
+@media (max-width: 480px) {
+  
+  /* .home{
+    margin-top: 50px;
+  } */
+
+.buttons{
+  width: 75%;
+  transform: translateX(+20%);
+}
+  .hero {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .welcome{
+    margin-top: 25px;
+    font-size: 15px;
+  }
+  .aboutme{
+    margin-top: 15px;
+    font-size: 15px;
+  }
+  .profile-pic img {
+    width: 200px; /* Further reduced size for small screens */
+    height: 200px;
+  }
+  .resume-btn,  
+  .quote-btn {  
+    font-size: 0.8em; /* Even smaller font */  
+    padding: 6px 3%; /* Compact padding */  
+  }  
+}
+
+/* Desktop Media Query (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .home-container {
+    flex-direction: row; /* Align content horizontally for desktop */
+  }
+
+
+  .profile-pic {
+    margin-top: 0;
+    order: 0; /* Image stays on the right for desktop */
+  }
+
+  .intro {
+    margin-left: 50px;
+    text-align: left;
+    width: 60%;
+  }
+
+  .buttons {  
+    margin-top: 25px;  
+    flex-direction: row; /* Align buttons horizontally */  
+    gap: 15px;  
+    justify-content: flex-start; /* Keep initial button alignment */  
+  } 
+}
