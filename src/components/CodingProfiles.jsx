@@ -6,7 +6,7 @@ import gfgLogo from "../assets/gfgLogo.png";
 import leetcodeLogo from "../assets/leetcodeLogo.png";
 import githubLogo from "../assets/githubLogo.png";
 import linkedinLogo from "../assets/linkedin.png";
-
+import hackLogo from "../assets/hackLogo.png";
 export default function CodingProfiles({isNightMode}) {
   const profiles = [
     {
@@ -32,6 +32,12 @@ export default function CodingProfiles({isNightMode}) {
       name: "GeeksforGeeks",
       link: "https://www.geeksforgeeks.org/user/kmahammadtct7/",
       logo: gfgLogo,
+    },
+    {
+      id: 5,
+      name: "Hackerrank",
+      link: "https://www.hackerrank.com/profile/kmahammadsami959",
+      logo: hackLogo,
     },
   ];
 
