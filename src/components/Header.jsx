@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import "./header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEllipsisV } from "@fortawesome/free-solid-svg-icons";
+import { faEllipsisV, faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { IconButton } from "@mui/material"; // Import MUI components
+import './header.css';
 
-export default function Header() {
+export default function Header({ isNightMode, toggleNightMode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const closeMenu = () => setIsMenuOpen(false);
-
   return (
-    <header className="header">
+    <header className={`header ${isNightMode ? 'night-mode' : 'day-mode'}`}>
       <div className="header-left">
         <h1 className="portfolio-name">PORTFOLIO</h1>
+        <IconButton onClick={toggleNightMode} color="inherit">
+          <FontAwesomeIcon  icon={isNightMode ? faSun : faMoon} /> {/* Toggle between Sun and Moon icon */}
+        </IconButton>
       </div>
 
       <div className="header-right">
@@ -29,22 +30,31 @@ export default function Header() {
         </nav>
 
         {/* Mobile Menu Button */}
-        <button className="mobile-menu-btn" onClick={() => setIsMenuOpen(true)}>
+        <IconButton
+          className="mobile-menu-btn"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          color="inherit"
+        >
           <FontAwesomeIcon icon={faEllipsisV} />
-        </button>
+        </IconButton>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu Overlay */}
         {isMenuOpen && (
-          <div className="mobile-menu-overlay" onClick={closeMenu}>
+          <div className="mobile-menu-overlay" onClick={() => setIsMenuOpen(false)}>
             <nav className="mobile-nav" onClick={(e) => e.stopPropagation()}>
-              <span className="mobile-nav-close" onClick={closeMenu}>&times;</span>
+              <span
+                className="mobile-nav-close"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                &times;
+              </span>
               <ul>
-                <li><Link to="home" smooth={true} duration={500} onClick={closeMenu}>Home</Link></li>
-                <li><Link to="about" smooth={true} duration={500} onClick={closeMenu}>About</Link></li>
-                <li><Link to="education" smooth={true} duration={500} onClick={closeMenu}>Education & Experience</Link></li>
-                <li><Link to="skills" smooth={true} duration={500} onClick={closeMenu}>Skills</Link></li>
-                <li><Link to="projects" smooth={true} duration={500} onClick={closeMenu}>Projects</Link></li>
-                <li><Link to="contact" smooth={true} duration={500} onClick={closeMenu}>Contact</Link></li>
+                <li><Link to="home" smooth={true} duration={500} onClick={() => setIsMenuOpen(false)}>Home</Link></li>
+                <li><Link to="about" smooth={true} duration={500} onClick={() => setIsMenuOpen(false)}>About</Link></li>
+                <li><Link to="education" smooth={true} duration={500} onClick={() => setIsMenuOpen(false)}>Education & Experience</Link></li>
+                <li><Link to="skills" smooth={true} duration={500} onClick={() => setIsMenuOpen(false)}>Skills</Link></li>
+                <li><Link to="projects" smooth={true} duration={500} onClick={() => setIsMenuOpen(false)}>Projects</Link></li>
+                <li><Link to="contact" smooth={true} duration={500} onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
               </ul>
             </nav>
           </div>

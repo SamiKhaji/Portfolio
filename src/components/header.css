@@ -1,62 +1,57 @@
 /* Basic Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Header Container */
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: white;
-    padding: 1rem 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    z-index: 1000;
-  }
-  
-  /* Header Left - Portfolio Name */
-  .header-left {
-    flex-shrink: 0;
-  }
-  
-  .portfolio-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  /* Desktop Navigation */
-  .desktop-nav ul {
-    display: flex;
-    gap: 0.5rem;
-    list-style: none;
-  }
-  
-  .desktop-nav a {
-    color: #333;
-    text-decoration: none;
-    padding: 0.75rem 1rem;
-    font-weight: 500;
-    font-size: 16px;
-  }
-  .desktop-nav a:hover{
-    background: rgba(243, 156, 18, 0.1); /* Subtle orange hover background */
-    color: #f39c12;
-    transform: scale(1.05); /* Slight zoom on hover */
-    cursor: pointer;
-  }
-  
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Container */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for night mode */
+  background-color: #fff; /* Set a solid background for the navbar */
+}
+.header-left{
+  display: flex;
+  gap: 20px;
+}
+
+/* Portfolio Name */
+.portfolio-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: inherit; /* Color will now inherit from the current theme */
+}
+
+/* Desktop Navigation */
+.desktop-nav ul {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.desktop-nav a {
+  color: inherit; /* Color will now inherit from the current theme */
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
   /* Mobile Menu Button */
   .mobile-menu-btn {
-    display: none;
+    display: none !important;
     background: none;
     border: none;
     font-size: 1.5rem;
@@ -117,33 +112,61 @@
     font-weight: 500;
     font-size: 18px;
     transition: all 0.3s ease;
+    cursor: pointer;
   }
+
+  .night-mode .mobile-nav a{
+    color: #fff;
+  }
+
   
   .mobile-nav a:hover {
     background: rgba(243, 156, 18, 0.1); /* Subtle orange hover background */
     color: #f39c12;
     transform: scale(1.05); /* Slight zoom on hover */
   }
-  
-  /* Media Queries */
-  @media (max-width: 768px) {
-    .desktop-nav {
-      display: none;
+
+@media (max-width: 768px) {
+  .header{
+    height: 50px;
     }
-  
-    .mobile-menu-btn {
-      display: block;
-    }
+  .desktop-nav {
+    display: none;
   }
-  
-  
-  @media (min-width: 769px) {
-    .mobile-menu-overlay, .mobile-menu-btn {
-      display: none;
-    }
-  
-    .desktop-nav {
-      display: block;
-    }
+
+  .mobile-menu-btn {
+    display: block !important;
   }
-  
+}
+
+@media (min-width: 769px) {
+  .mobile-menu-overlay, .mobile-menu-btn {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+}
+
+/* Mobile Navigation - Night Mode Styles */
+.night-mode .mobile-nav {
+  background: #333; /* Dark background for mobile menu in night mode */
+  color: white; /* Text color for night mode */
+}
+
+.night-mode .desktop-nav a {
+  color: white; /* Dark mode text color */
+}
+
+.night-mode .header {
+  background-color: #333; /* Dark background for header in night mode */
+}
+
+.night-mode .portfolio-name {
+  color: white; /* White text for portfolio name in night mode */
+}
+
+.night-mode .desktop-nav a {
+  color: white; /* White text for desktop nav links in night mode */
+}
