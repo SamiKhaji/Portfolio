@@ -7,7 +7,7 @@
 }
 
 .education-heading {
-  font-size: 1.8rem;
+  font-size:2rem;
   color: #333;
   margin-bottom: 60px;
   letter-spacing: 2px;
@@ -15,6 +15,10 @@
     text-transform: uppercase;
     font-weight: bold;
     color: #333;
+}
+
+.night-mode .education-heading{
+  color: white;
 }
 
 .circle-container {
@@ -47,11 +51,16 @@
 .details-box {
   max-width: 400px;
   margin: 0 auto;
+  margin-top: 40px;
   background-color: #f9f9f9;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
+}
+.night-mode .details-box{
+  background-color:rgb(57, 54, 54);
+  box-shadow: 0 4px 4px  #1b1a1a;
 }
 
 .details-box h3 {
@@ -60,12 +69,25 @@
   margin-bottom: 10px;
 }
 
+.night-mode .details-box h3{
+  color: #fffcfc;
+}
+
 .details-box .role,
 .details-box .duration,
 .details-box .gpa {
+  margin-top: 10px;
   font-size: 1.1rem;
   color: #555;
   margin: 5px 0;
+}
+
+.night-mode .details-box .role,
+.details-box .duration,
+.details-box .gpa {
+  
+  color: #ffffff;
+ 
 }
 
 /* Mobile View */
@@ -105,16 +127,22 @@
     margin-bottom: 30px;
   }
   .circle-container {
+    margin-top: 40px;
     flex-direction: row; /* Stack circles vertically on very small screens */
   }
 
   .circle {
-    width: 85px;
-    height:65px;
-    font-size: 0.9rem;
+    width: 90px;
+    height: 78px;
+    font-size: 1rem;
+  }
+  
+  .details-box{
+    margin-top: 40px;
   }
 
   .details-box h3 {
+    
     font-size: 1rem;
   }
 }

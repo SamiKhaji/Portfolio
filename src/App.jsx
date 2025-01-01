@@ -7,7 +7,7 @@ import './App.css';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material'; // Import MUI ThemeProvider
 
 function App() {
-  const [isNightMode, setIsNightMode] = useState(false); // Track night mode state
+  const [isNightMode, setIsNightMode] = useState(true); // Track night mode state
 
   // Define MUI light and dark themes
   const lightTheme = createTheme({
@@ -41,9 +41,9 @@ function App() {
       <CssBaseline /> {/* This ensures the global styles (background, text color) are applied */}
       <div>
         <Header isNightMode={isNightMode} toggleNightMode={toggleNightMode} />
-        <Home />
-        <CombinedComponent />
-        <Projects />
+        <Home isNightMode={isNightMode}/>
+        <CombinedComponent isNightMode={isNightMode}/>
+        <Projects isNightMode={isNightMode}/>
       </div>
     </ThemeProvider>
   );

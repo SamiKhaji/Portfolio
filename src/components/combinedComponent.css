@@ -5,7 +5,10 @@
     gap: 3rem; /* Space between Educa and CodingProfiles components */
     padding: 2rem;
     flex-wrap: wrap; /* Ensure wrapping in smaller screens */
-    box-sizing: border-box;  }
+    box-sizing: border-box; 
+    
+  
+  }
   
   /* Ensure equal width for both components */
   .education-container,
@@ -19,7 +22,7 @@
     .combined-container {
       flex-direction: column; /* Stack components vertically */
       align-items: center; /* Center-align in column layout */
-      gap: 2rem; /* Space between components in mobile view */
+      gap: 5rem; /* Space between components in mobile view */
       padding: 1rem; /* Adjust padding for smaller screens */
     }
   
@@ -28,5 +31,12 @@
       flex: 1 1 100%; /* Full width in mobile */
       max-width: 100%; /* Remove max-width constraint */
     }
+  }
+
+  @media screen and (max-height:700px) {
+    .combined-container{
+      gap: 15rem;
+    }
+    
   }
   

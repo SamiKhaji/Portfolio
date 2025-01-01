@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./educa.css";
 
-export default function Educa() {
+export default function Educa({isNightMode}) {
   const [selectedLevel, setSelectedLevel] = useState("BTech");
 
   const educationDetails = {
@@ -26,7 +26,7 @@ export default function Educa() {
   };
 
   return (
-    <div id="education" className="education-journey">
+    <div id="education" className={`education-journey ${isNightMode ? 'night-mode' : 'day-mode'}`}>
       <h2 className="education-heading">Education</h2>
       <div className="circle-container">
         <div

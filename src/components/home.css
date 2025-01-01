@@ -78,11 +78,18 @@
   cursor: pointer;
   margin-right: 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 15px;
 }
 
 .resume-btn {
   background-color: #f1f1f1;
   color: #333;
+}
+
+.night-mode .quote-btn{
+  color: rgb(255, 246, 246);
+  background-color: grey;
+  font-size: 15px;
 }
 
 .quote-btn {
@@ -255,10 +262,11 @@
   } 
 }
 
-@media screen and (max-height: 550px) {
+@media screen and (max-height: 700px) {
   .home {
     margin-top: 100px;
     height: auto;
     padding-bottom: 50px;
   }
+
 }

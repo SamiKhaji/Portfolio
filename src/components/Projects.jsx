@@ -33,7 +33,7 @@ const projectsData = [
     technologies: ["React JS","HTML", "CSS","JSX"],
     description: "A sleek and responsive portfolio app designed with React JS, ensuring seamless compatibility across all devices. It's a perfect showcase of my projects and skills, offering an intuitive and visually appealing experience.",
     githubLink: "https://github.com/user/kids-learning-app",
-    deploymentLink: "https://coldmailgenie.com",
+    deploymentLink: "https://samikhaji.github.io/Portfolio/",
     status: "In Progress",
     image:pro6,
   },
@@ -50,7 +50,8 @@ const projectsData = [
     title: "Kids Learning App",
     technologies: ["PHP", "MySQL", "HTML", "CSS", "JS"],
     description: "An interactive, fun learning platform for kids, offering personalized educational content and quizzes in a secure, engaging environment",
-    githubLink: "https://github.com/user/kids-learning-app",
+    deploymentLink: "https://www.dropbox.com/scl/fi/7hzyput3i3oe8207xqhib/Kids_Learning_App_Demo-Made-with-Clipchamp_1735755338412.mp4?rlkey=8yvedijmpieuwuxdyij9ubqom&st=58b7ci6i&dl=0",
+    githubLink: "https://github.com/SamiKhaji/Kids_Learning_WebApp",
     status: "Completed",
     image:pro5,
   },
@@ -58,8 +59,8 @@ const projectsData = [
     title: "Sales Data Analysis",
     technologies: ["Power BI", "Excel","Data Analytics"],
     description: "An advanced sales forecasting model that turns raw data into valuable insights, helping businesses optimize inventory and strategy.",
-    deploymentLink: "https://coldmailgenie.com",
-    githubLink: "https://github.com/user/sales-data-analysis",
+    deploymentLink: "https://www.dropbox.com/scl/fi/3xgie2u8gt22m8oil95ld/Sales_project_DA.pdf?rlkey=dgiiwe1ygo3h8orbz7o6ssij2&st=5y39aaw6&dl=0",
+    githubLink: "https://github.com/SamiKhaji/Store-Sales-Analysis",
     status: "Completed",
     image: pro3,
   },
@@ -69,7 +70,7 @@ const projectsData = [
 const getStatusIcon = (status) => {
   switch (status) {
     case "Completed":
-      return <FontAwesomeIcon icon={faCheckCircle} className="icon status-completed-icon" title="Completed" />;
+      return <FontAwesomeIcon icon={faCheckCircle} className="icon-status-completed-icon" title="Completed" />;
     case "In Progress":
       return <FontAwesomeIcon icon={faSpinner} className="status-progress-icon" spin title="In Progress" />;
     default:
@@ -77,9 +78,9 @@ const getStatusIcon = (status) => {
   }
 };
 
-const Projects = () => {
+const Projects = ({isNightMode}) => {
   return (
-    <div id="projects" className="projects-container">
+    <div id="projects" className={`projects-container ${isNightMode ? 'night-mode' : 'day-mode'}`}>
       <h1>My Projects</h1>
       <div className="projects-grid">
         {projectsData.map((project, index) => (
@@ -97,12 +98,13 @@ const Projects = () => {
             <div className="project-icons">
               {project.githubLink && (
                 <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="icon-link">
-                  <FontAwesomeIcon icon={faGithub} className="icon github-icon" title="GitHub" />
+                  <FontAwesomeIcon icon={faGithub} className="icon-github-icon" title="GitHub" />
+                  
                 </a>
               )}
               {project.deploymentLink && (
                 <a href={project.deploymentLink} target="_blank" rel="noopener noreferrer" className="icon-link">
-                  <FontAwesomeIcon icon={faGlobe} className="icon deployment-icon" title="Deployed Site" />
+                  <FontAwesomeIcon icon={faGlobe} className="icon-deployment-icon" title="Deployed Site" />
                 </a>
               )}
               <p className="status-icon">{getStatusIcon(project.status)}</p>

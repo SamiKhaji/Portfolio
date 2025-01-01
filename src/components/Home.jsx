@@ -3,7 +3,7 @@ import "./home.css";
 import React, { useState, useEffect } from "react";
 
 
-export default function Home() {
+export default function Home({isNightMode}) {
   const texts = [
     "Software Developer",
     "ML Engineer",
@@ -45,7 +45,7 @@ export default function Home() {
   
 
   return (
-    <main id="home" className="home">
+    <main id="home" className={`home ${isNightMode ? 'night-mode' : 'day-mode'}`}>
       <div className={`home-container ${isMobile ? "mobile" : ""}`}>
         {/* Image comes first for mobile, followed by text */}
         <div className="profile-pic">

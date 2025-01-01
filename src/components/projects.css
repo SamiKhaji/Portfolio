@@ -10,7 +10,6 @@
 
 /* Heading Styles */
 .projects-container h1 {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -19,6 +18,10 @@
     text-align: center;
     letter-spacing: 2px;
     line-height: 1.2;
+}
+
+.night-mode .projects-container h1{
+    color: white;
 }
 
 /* Project Grid */
@@ -47,6 +50,11 @@
     max-width: 350px;
     box-sizing: border-box;
 }
+.night-mode .project-card{
+    background-color:rgb(57, 54, 54);
+  box-shadow: 0 4px 4px  #1b1a1a;
+
+}
 
 .project-card:hover {
     transform: scale(1.05); /* Slightly enhanced hover effect */
@@ -68,6 +76,10 @@
     font-size: 1.4rem;
     margin: 10px 0 8px;
     color: #333;
+}
+
+.night-mode .project-card h2{
+color: white;
 }
 
 /* Technologies Section */
@@ -109,6 +121,12 @@
     margin-bottom: 10px; /* Space between description and icons */
 }
 
+
+.night-mode .short-description{
+    color: #888888;
+}
+
+
 /* Icons Section */
 .project-icons {
     display: flex;
@@ -124,6 +142,56 @@
     text-decoration: none;
     color: inherit;
     transition: color 0.3s ease;
+}
+.icon-github-icon{
+    color: inherit;
+    font-size: 25px;
+}
+.night-mode .icon-github-icon{
+    color: white;
+    font-size: 25px;
+}
+
+.night-mode .icon-github-icon:hover{
+    color: #ff6600;
+}
+.icon-deployment-icon{
+    color: inherit;
+    font-size: 25px;
+}
+.night-mode .icon-deployment-icon{
+    color: white;
+    font-size: 25px;
+}
+
+.night-mode .icon-deployment-icon:hover{
+    color: #ff6600;
+}
+
+.icon-status-completed-icon{
+    color: inherit;
+    font-size: 25px;
+}
+.night-mode .icon-status-completed-icon{
+    color: white;
+    font-size: 25px;
+}
+
+.night-mode .icon-status-completed-icon:hover{
+    color: #ff6600;
+}
+
+.status-progress-icon{
+    color: inherit;
+    font-size: 25px;
+}
+.night-mode .status-progress-icon{
+    color: white;
+    font-size: 25px;
+}
+
+.night-mode .status-progress-icon:hover{
+    color: #ff6600;
 }
 
 .icon {

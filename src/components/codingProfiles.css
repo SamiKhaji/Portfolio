@@ -8,7 +8,7 @@
   margin-top: -30px;
   
   margin-bottom: 50px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #333;
   margin-bottom: 60px;
   letter-spacing: 2px;
@@ -17,9 +17,13 @@
     font-weight: bold;
     color: #333;
 }
+.night-mode .professional-profiles h2{
+  color: white;
 
+}
 .profiles-container {
   display: flex;
+  flex:0.5 ;
   justify-content: center;
   gap: 3rem;
   flex-wrap: wrap;
@@ -34,16 +38,19 @@
 .profile img {
   width: 100px;
   height: 100px;
+  border-radius: 20px;
   object-fit: contain;
   margin-bottom: 10px;
 }
 
-.profile p {
+.profile .capt {
   font-size: 1.2rem;
   color: #333;
   margin-top: 5px;
 }
-
+.night-mode .capt{
+  color: white;
+}
 .profile:hover {
   transform: scale(1.1);
 }
@@ -66,7 +73,7 @@
     height: 80px;
   }
 
-  .profile p {
+  .profile .capt {
     font-size: 1rem;
   }
 
@@ -94,7 +101,7 @@
     gap: 1rem; /* Reduced gap on smaller screens */
   }
 
-  .profile p {
+  .profile .capt {
     font-size: 0.9rem;
   }
 }
