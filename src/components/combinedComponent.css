@@ -37,6 +37,12 @@
     .combined-container{
       gap: 15rem;
     }
+  }
+
+  @media screen and (max-height:400px){
+    .combined-container{
+      gap: 20rem;
+    }
     
   }
   
