@@ -22,7 +22,7 @@ const projectsData = [
   },
   {
     title: "Smart Crop Predictor",
-    technologies: ["Machine Learning", "Embedded Systems","Micro Pyhon"],
+    technologies: ["Machine Learning", "Embedded Systems","Micro Python"],
     description: "A smart crop recommendation Device that uses environmental data to help farmers choose the best crops to grow, boosting the returns generated from crops using machine learning.",
     githubLink: "https://github.com/SamiKhaji/Smart-Crop-Predictor",
     status: "Completed",
