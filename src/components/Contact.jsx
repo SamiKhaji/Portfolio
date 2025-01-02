@@ -52,7 +52,7 @@ export default function Contact({isNightMode}) {
               <i className="fas fa-phone"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/your-linkedin-profile"
+              href="https://www.linkedin.com/in/mahammadsami/"
               className="contact-icon"
               title="LinkedIn Profile"
               target="_blank"
