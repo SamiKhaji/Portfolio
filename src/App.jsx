@@ -37,7 +37,22 @@ function App() {
       document.body.classList.remove("night-mode");
     }
   }, [isNightMode]);
+  useEffect(() => {
+    // Add the Google Analytics script dynamically
+    const script1 = document.createElement("script");
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-HK5M0QXJP4";
+    document.head.appendChild(script1);
 
+    const script2 = document.createElement("script");
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HK5M0QXJP4');
+    `;
+    document.head.appendChild(script2);
+  }, []);
   return (
     <ThemeProvider theme={isNightMode ? darkTheme : lightTheme}>
       <CssBaseline /> {/* This ensures the global styles (background, text color) are applied */}
