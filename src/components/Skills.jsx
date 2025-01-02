@@ -28,7 +28,7 @@ const skills = [
 
 export default function Skills({isNightMode}){
     return (
-        <section className={`skills-section ${isNightMode ? 'night-mode' : 'day-mode'}`}>
+        <section id="skills" className={`skills-section ${isNightMode ? 'night-mode' : 'day-mode'}`}>
           <h2 className="skills-title">My Skills</h2>
           <div className="skills-container">
             {skills.map((skill, index) => (
