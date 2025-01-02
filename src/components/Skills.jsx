@@ -12,13 +12,13 @@ import gh from '../assets/git.png'
 import php from '../assets/php.png'
 import sl from "../assets/slit.svg"
 const skills = [
-    { name: "HTML 5", icon: htmlicon }, // Replace with your icon paths
+    { name: "HTML 5", icon: htmlicon }, 
     { name: "CSS 3", icon: cssicon },
     { name: "React", icon: ricon },
     { name: "Python", icon: pyicon },
     { name: "CPP", icon: cpp },
     { name: "MySQL", icon: mysql },
-    { name: "Java", icon: java }, // Replace with your icon paths
+    { name: "Java", icon: java }, 
     { name: "TensorFlow", icon: tf },
     { name: "Scikit-Learn", icon: sk },
     { name: "StreamLit", icon: sl },
