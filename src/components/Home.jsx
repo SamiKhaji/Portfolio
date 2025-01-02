@@ -13,7 +13,9 @@ export default function Home({isNightMode}) {
   ];
   const [currentText, setCurrentText] = useState(texts[0]);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Check if the screen is mobile size
-
+  const scrollToContact = () => {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+  };
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentText((prevText) => {
@@ -22,6 +24,8 @@ export default function Home({isNightMode}) {
         return texts[nextIndex];
       });
     }, 3000);
+
+    
 
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768); // Check window size on resize
@@ -65,7 +69,7 @@ export default function Home({isNightMode}) {
             <button className="quote-btn" onClick={handleResumeClick}>
               View My Resume
             </button>
-            <button className="quote-btn">Connect</button>
+            <button className="quote-btn" onClick={scrollToContact}>Connect</button>
           </div>
         </section>
       </div>

@@ -4,7 +4,7 @@ import "./Contact.css";
 export default function Contact({isNightMode}) {
   return (
     <section className={`contact-section ${isNightMode ? 'night-mode' : 'day-mode'}`} id="contact">
-      <h2 className="contact-title">Contact Me</h2>
+      <h2 className="contact-title">Let's Connect</h2>
       <div className="contact-container">
         {/* Contact Form */}
         <form
