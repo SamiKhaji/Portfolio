@@ -63,6 +63,12 @@ export default function Contact({isNightMode}) {
           </div>
         </div>
       </div>
+      <div className="footer">
+        <p>
+          Made with ❤️ by <strong>Khaji Mahammad Sami</strong>
+        </p>
+        <p>© 2025 All Rights Reserved</p>
+      </div>
     </section>
   );
 }
