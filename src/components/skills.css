@@ -1,0 +1,147 @@
+.skills-section {
+    max-width: 1400px; /* Ensures responsiveness */
+    margin: 0 auto; /* Centers section */
+    display: flex;
+    flex-direction: column; /* Aligns content vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+
+
+  
+  .skills-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.2;
+  }
+
+  .night-mode .skills-title{
+    color: white
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+  }
+  
+  .skill-card {
+    cursor: pointer;
+    background-color: #333;
+    border-radius: 15px; /* Slightly rounder corners */
+    padding: 15px;
+    width: 180px; /* Card width */
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .day-mode .skill-card{
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-card:hover {
+    background-color: #444; /* Slightly brighter on hover */
+    transform: translateY(-10px); /* Card lifts slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow effect */
+  }
+
+  .day-mode .skill-card:hover{
+    background-color: #e3d9d9
+  }
+  
+  .skill-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 10%; /* Smooth border radius */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-card:hover .skill-icon {
+    transform: scale(1.2); /* More prominent zoom on icon hover */
+  }
+  
+  .skill-card h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+  }
+
+  .day-mode .skill-card h3{
+    color: black;
+  }
+  
+  .skill-card:hover h3 {
+    color: #ff6600; /* Change title color on hover */
+  }
+  
+  .skill-card p {
+    font-size: 1rem;
+    color: #bbb;
+    transition: color 0.3s ease;
+  }
+  
+  .skill-card:hover p {
+    color: #eee; /* Slightly brighter text on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+
+    .skills-title{
+        margin-top: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    }
+    .skills-container {
+        margin-top: 20px;
+      gap: 10px; /* Reduce gap for smaller screens */
+    }
+    
+    .skill-card {
+      width: 120px; /* Adjust card size for mobile */
+      padding: 15px;
+    }
+    
+    .skill-icon {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .skill-card h3 {
+      font-size: 1rem;
+    }
+  
+    .skill-card p {
+      font-size: 0.8rem;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .skills-title{
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .skills-title {
+      margin-top: 10%;
+      font-size: 1.5rem;
+      margin-bottom: 10%;
+  
+    }}
+    @media (min-width: 1025px) {
+        .skills-title {
+            font-size: 2.5rem; /* Normal title size for large screens */
+        }}

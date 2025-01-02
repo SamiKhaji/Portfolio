@@ -25,6 +25,9 @@
   display: flex;
   gap: 20px;
 }
+.faicon{
+  font-size: 25px;
+}
 
 /* Portfolio Name */
 .portfolio-name {
@@ -128,16 +131,33 @@
   }
 
 @media (max-width: 768px) {
+  .header-left{
+    gap: 8px;
+  }
+   
   .header{
     height: 50px;
     }
   .desktop-nav {
     display: none;
   }
+  
 
   .mobile-menu-btn {
     display: block !important;
   }
+}
+
+@media screen and (max-width:950px) {
+  .desktop-nav ul {
+    gap: 0.5rem;
+    list-style: none;
+  }
+  .desktop-nav a{
+    padding: 0 3px;
+    font-size: 15px;
+  }
+  
 }
 
 @media (min-width: 769px) {

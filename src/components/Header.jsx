@@ -12,7 +12,7 @@ export default function Header({ isNightMode, toggleNightMode }) {
       <div className="header-left">
         <h1 className="portfolio-name">PORTFOLIO</h1>
         <IconButton onClick={toggleNightMode} color="inherit">
-          <FontAwesomeIcon  icon={isNightMode ? faSun : faMoon} /> {/* Toggle between Sun and Moon icon */}
+          <FontAwesomeIcon  className="faicon" icon={isNightMode ? faSun : faMoon} /> {/* Toggle between Sun and Moon icon */}
         </IconButton>
       </div>
 

@@ -5,6 +5,7 @@ import CombinedComponent from './components/CombinedComponent';
 import Projects from './components/Projects';
 import './App.css';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material'; // Import MUI ThemeProvider
+import Skills from './components/Skills';
 
 function App() {
   const [isNightMode, setIsNightMode] = useState(true); // Track night mode state
@@ -43,6 +44,7 @@ function App() {
         <Header isNightMode={isNightMode} toggleNightMode={toggleNightMode} />
         <Home isNightMode={isNightMode}/>
         <CombinedComponent isNightMode={isNightMode}/>
+        <Skills isNightMode={isNightMode}/>
         <Projects isNightMode={isNightMode}/>
       </div>
     </ThemeProvider>

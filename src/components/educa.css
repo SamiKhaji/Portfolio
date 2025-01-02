@@ -42,6 +42,9 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+.night-mode .circle{
+  color: rgb(38, 37, 37);
+}
 
 .circle.active {
   background-color: #f39c12;
@@ -78,16 +81,17 @@
 .details-box .gpa {
   margin-top: 10px;
   font-size: 1.1rem;
-  color: #555;
+  color: #555 ;
   margin: 5px 0;
 }
 
+
+
+
 .night-mode .details-box .role,
-.details-box .duration,
-.details-box .gpa {
-  
+.night-mode .details-box .duration,
+.night-mode .details-box .gpa {
   color: #ffffff;
- 
 }
 
 /* Mobile View */
@@ -142,7 +146,6 @@
   }
 
   .details-box h3 {
-    
     font-size: 1rem;
   }
 }

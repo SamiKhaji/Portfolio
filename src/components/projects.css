@@ -204,6 +204,8 @@ color: white;
 }
 
 /* Responsive Design */
+
+
 @media (max-width: 768px) {
     .projects-container h1 {
         font-size: 2rem; /* Smaller title size for mobile */
@@ -271,5 +273,11 @@ color: white;
 
     .short-description {
         font-size: 1rem;
+    }
+}
+@media (max-width: 480px) {
+
+    .projects-container h1 {
+        font-size: 1.5rem; /* Smaller title size for mobile */
     }
 }
