@@ -32,7 +32,7 @@ const projectsData = [
     title: "Portfolio Website",
     technologies: ["React JS","HTML", "CSS","JSX"],
     description: "A sleek and responsive portfolio app designed with React JS, ensuring seamless compatibility across all devices. It's a perfect showcase of my projects and skills, offering an intuitive and visually appealing experience.",
-    githubLink: "https://github.com/user/kids-learning-app",
+    githubLink: "hhttps://github.com/SamiKhaji/Portfolio",
     deploymentLink: "https://samikhaji.github.io/Portfolio/",
     status: "In Progress",
     image:pro6,

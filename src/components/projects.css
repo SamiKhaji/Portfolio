@@ -209,7 +209,7 @@ color: white;
 @media (max-width: 768px) {
     .projects-container h1 {
         font-size: 2rem; /* Smaller title size for mobile */
-        margin-bottom: 30px;
+        margin-top: -10px;
     }
 
     .projects-grid {
