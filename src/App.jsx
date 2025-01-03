@@ -7,6 +7,9 @@ import './App.css';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material'; // Import MUI ThemeProvider
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import ReactGA from 'react-ga'
+
+
 
 function App() {
   const [isNightMode, setIsNightMode] = useState(true); // Track night mode state
