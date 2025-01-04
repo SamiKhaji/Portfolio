@@ -35,7 +35,7 @@
   }
   
   .skill-card {
-    cursor: pointer;
+  
     background-color: #333;
     border-radius: 15px; /* Slightly rounder corners */
     padding: 15px;
@@ -50,26 +50,26 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  .skill-card:hover {
-    background-color: #444; /* Slightly brighter on hover */
-    transform: translateY(-10px); /* Card lifts slightly */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow effect */
+  /* .skill-card:hover {
+    background-color: #444; 
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
   }
 
   .day-mode .skill-card:hover{
     background-color: #e3d9d9
-  }
+  } */
   
   .skill-icon {
     width: 70px;
     height: 70px;
-    border-radius: 10%; /* Smooth border radius */
+    border-radius: 10%; 
     margin-bottom: 10px;
     transition: transform 0.3s ease;
   }
   
   .skill-card:hover .skill-icon {
-    transform: scale(1.2); /* More prominent zoom on icon hover */
+    transform: scale(1.2); 
   }
   
   .skill-card h3 {
@@ -82,9 +82,9 @@
     color: black;
   }
   
-  .skill-card:hover h3 {
-    color: #ff6600; /* Change title color on hover */
-  }
+  /* .skill-card:hover h3 {
+    color: #ff6600;
+  } */
   
   .skill-card p {
     font-size: 1rem;
@@ -93,10 +93,10 @@
   }
   
   .skill-card:hover p {
-    color: #eee; /* Slightly brighter text on hover */
+    color: #eee; 
   }
   
-  /* Responsive Design */
+ 
   @media (max-width: 768px) {
 
     .skills-title{
@@ -106,11 +106,11 @@
     }
     .skills-container {
         margin-top: 20px;
-      gap: 10px; /* Reduce gap for smaller screens */
+      gap: 10px; 
     }
     
     .skill-card {
-      width: 120px; /* Adjust card size for mobile */
+      width: 120px;
       padding: 15px;
     }
     
@@ -143,5 +143,5 @@
     }}
     @media (min-width: 1025px) {
         .skills-title {
-            font-size: 2.5rem; /* Normal title size for large screens */
+            font-size: 2.5rem; 
         }}

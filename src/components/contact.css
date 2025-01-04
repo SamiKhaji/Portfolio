@@ -1,6 +1,6 @@
 .contact-section {
     padding: 50px 20px;
-    background: inherit; /* Background inherits from the parent */
+    background: inherit; 
     color: #fff;
     text-align: center;
   }
@@ -63,9 +63,9 @@
 
   .day-mode .contact-form input,
 .day-mode .contact-form textarea {
-  background: #f5f5f5; /* Light Background */
-  color: #000; /* Dark Text for Day Mode */
-  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+  background: #f5f5f5; 
+  color: #000; 
+  border: 1px solid #ccc; 
 }
 
   
@@ -124,18 +124,18 @@
     color: #ff6600;
   }
   
-  /* Day Mode Icon Styles */
+  
 .day-mode .contact-icons a {
-    color: #000; /* Black Icons for Day Mode */
+    color: #000; 
   }
   
   .day-mode .contact-icons a:hover {
-    color: #ff6600; /* Optional: Blue Hover Effect in Day Mode */
+    color: #ff6600; 
   }
   
-  /* "Feel Free to Reach Out" Text */
+
   .day-mode .contact-details p {
-    color: black; /* Default Night Mode Text */
+    color: black;
   }
 
   @media (max-width: 768px) {
@@ -148,25 +148,24 @@
   }
   @media (min-width: 769px) and (max-width: 1024px) {
     .contact-title {
-        font-size: 2.2rem; /* Slightly smaller title size for tablets */
+        font-size: 2.2rem; 
         margin-bottom: 40px;
     }}
 
     @media (min-width: 1025px) {
         .contact-title {
-            font-size: 2.5rem; /* Normal title size for large screens */
+            font-size: 2.5rem; 
         }}
 
-/* Footer Section */
 .footer {
     text-align: center;
     margin-top: 30px;
     font-size: 0.9rem;
-    color: #ccc; /* Default Night Mode */
+    color: #ccc; 
   }
   
   .day-mode .footer {
-    color: #000; /* Black for Day Mode */
+    color: #000;
   }
   
   .footer p {

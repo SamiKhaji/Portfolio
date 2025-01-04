@@ -1,35 +1,34 @@
-/* Parent container for both components */
+
 .combined-container {
     display: flex;
     justify-content: space-between;
-    gap: 3rem; /* Space between Educa and CodingProfiles components */
+    gap: 3rem; 
     padding: 2rem;
-    flex-wrap: wrap; /* Ensure wrapping in smaller screens */
+    flex-wrap: wrap; 
     box-sizing: border-box; 
     
   
   }
   
-  /* Ensure equal width for both components */
   .education-container,
   .profiles-container {
-    flex: 1 1 45%; /* 45% width for each component in desktop */
+    flex: 1 1 45%;
     box-sizing: border-box;
   }
   
-  /* Mobile View */
+  
   @media (max-width: 768px) {
     .combined-container {
-      flex-direction: column; /* Stack components vertically */
-      align-items: center; /* Center-align in column layout */
-      gap: 5rem; /* Space between components in mobile view */
-      padding: 1rem; /* Adjust padding for smaller screens */
+      flex-direction: column; 
+      align-items: center; 
+      gap: 5rem;
+      padding: 1rem; 
     }
   
     .education-container,
     .profiles-container {
-      flex: 1 1 100%; /* Full width in mobile */
-      max-width: 100%; /* Remove max-width constraint */
+      flex: 1 1 100%; 
+      max-width: 100%;
     }
   }
 

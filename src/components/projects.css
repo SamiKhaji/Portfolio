@@ -1,14 +1,14 @@
-/* General Container Styles */
+
 .projects-container {
     text-align: center;
     margin: 0 auto;
-    padding: 50px 10px; /* Adjusted padding for better spacing */
-    height: auto; /* Allow the container to adjust based on content */
-    max-width: 1200px; /* Restrict the container width for better alignment */
-    margin-top: 80px; /* Added margin to prevent overlap with the upper section */
+    padding: 50px 10px; 
+    height: auto;
+    max-width: 1200px; 
+    margin-top: 80px; 
 }
 
-/* Heading Styles */
+
 .projects-container h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -24,17 +24,17 @@
     color: white;
 }
 
-/* Project Grid */
+
 .projects-grid {
     display: flex;
     justify-content: center;
     margin-top: 50px;
     flex-wrap: wrap;
     gap: 20px;
-    align-items: stretch; /* Ensure all cards align properly */
+    align-items: stretch; 
 }
 
-/* Project Card */
+
 .project-card {
     background-color: #f9f9f9;
     border-radius: 15px;
@@ -43,7 +43,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* Space out content evenly */
+    justify-content: space-between; 
     padding: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
@@ -57,21 +57,21 @@
 }
 
 .project-card:hover {
-    transform: scale(1.05); /* Slightly enhanced hover effect */
+    transform: scale(1.05); 
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Project Image */
+
 .project-image {
-    height: 300px !important; /* Uniform image height */
-    width: 300px; /* Full width */
-    object-fit: cover; /* Ensure proper image scaling */
+    height: 300px !important; 
+    width: 300px; 
+    object-fit: cover;
     border-radius: 10px;
     margin-top: 20px;
-    margin-bottom: 10px; /* Add spacing between image and text */
+    margin-bottom: 10px; 
 }
 
-/* Project Title */
+
 .project-card h2 {
     font-size: 1.4rem;
     margin: 10px 0 8px;
@@ -82,14 +82,14 @@
 color: white;
 }
 
-/* Technologies Section */
+
 .technologies {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     justify-content: center;
     margin-bottom: 10px;
-    align-items: center; /* Vertically align skills */
+    align-items: center;
     box-sizing: border-box;
 }
 
@@ -99,16 +99,16 @@ color: white;
     padding: 5px 10px;
     border-radius: 20px;
     font-size: 0.9rem;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.tech-chip:hover {
+/* .tech-chip:hover {
     background-color: #ff6600;
     color: white;
-}
+} */
 
-/* Description */
+
 .short-description {
     font-size: 0.95rem;
     color: #777;
@@ -118,7 +118,7 @@ color: white;
     overflow-wrap: break-word;
     word-break: break-word;
     line-height: 1.4;
-    margin-bottom: 10px; /* Space between description and icons */
+    margin-bottom: 10px; 
 }
 
 
@@ -127,14 +127,14 @@ color: white;
 }
 
 
-/* Icons Section */
+
 .project-icons {
     display: flex;
-    justify-content: center; /* Center icons horizontally */
-    align-items: center; /* Align icons vertically */
+    justify-content: center; 
+    align-items: center;
     gap: 10px;
-    margin-top: 10px; /* Small margin between description and icons */
-    padding: 10px 0; /* Add some padding for spacing */
+    margin-top: 10px; 
+    padding: 10px 0; 
     box-sizing: border-box;
 }
 
@@ -195,20 +195,20 @@ color: white;
 }
 
 .icon {
-    font-size: 1.5rem; /* Icon size */
+    font-size: 1.5rem; 
     color: #333;
 }
 
 .icon:hover {
-    color: #ff6600; /* Highlight color on hover */
+    color: #ff6600; 
 }
 
-/* Responsive Design */
+
 
 
 @media (max-width: 768px) {
     .projects-container h1 {
-        font-size: 2rem; /* Smaller title size for mobile */
+        font-size: 2rem; 
         margin-top: -10px;
     }
 
@@ -223,7 +223,7 @@ color: white;
     }
 
     .project-image {
-        height: 150px; /* Reduced image height for mobile */
+        height: 150px;
     }
 
     .short-description {
@@ -233,7 +233,7 @@ color: white;
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .projects-container h1 {
-        font-size: 2.2rem; /* Slightly smaller title size for tablets */
+        font-size: 2.2rem; 
         margin-bottom: 40px;
     }
 
@@ -246,7 +246,7 @@ color: white;
     }
 
     .project-image {
-        height: 180px; /* Adjust image height for tablets */
+        height: 180px; 
     }
 
     .short-description {
@@ -256,7 +256,7 @@ color: white;
 
 @media (min-width: 1025px) {
     .projects-container h1 {
-        font-size: 2.5rem; /* Normal title size for large screens */
+        font-size: 2.5rem;
     }
 
     .projects-grid {
@@ -268,7 +268,7 @@ color: white;
     }
 
     .project-image {
-        height: 200px; /* Maintain original image height for large screens */
+        height: 200px; 
     }
 
     .short-description {
@@ -278,6 +278,6 @@ color: white;
 @media (max-width: 480px) {
 
     .projects-container h1 {
-        font-size: 1.5rem; /* Smaller title size for mobile */
+        font-size: 1.5rem;
     }
 }

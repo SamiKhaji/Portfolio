@@ -60,7 +60,6 @@
   color: inherit;
 }
 
-/* Mobile View */
 @media (max-width: 768px) {
   .professional-profiles h2 {
     margin-top: 20px;
@@ -98,7 +97,7 @@
 
   .profiles-container {
     justify-content: center;
-    gap: 1rem; /* Reduced gap on smaller screens */
+    gap: 1rem; 
   }
 
   .profile .capt {

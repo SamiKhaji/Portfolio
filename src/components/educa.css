@@ -94,7 +94,7 @@
   color: #ffffff;
 }
 
-/* Mobile View */
+
 @media (max-width: 768px) {
   .education-heading {
     font-size: 1.6rem;
@@ -111,8 +111,8 @@
   }
 
   .details-box {
-    width: 90%; /* Full width on mobile */
-    padding: 15px; /* Reduced padding for mobile */
+    width: 90%; 
+    padding: 15px;
   }
 
   .details-box h3 {
@@ -132,7 +132,7 @@
   }
   .circle-container {
     margin-top: 40px;
-    flex-direction: row; /* Stack circles vertically on very small screens */
+    flex-direction: row;
   }
 
   .circle {
