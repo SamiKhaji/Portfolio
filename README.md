@@ -18,4 +18,4 @@ Welcome to my portfolio! This React-based website is designed to showcase my jou
 - **Hosting:** GitHub Pages
 
 ## 📬 Connect With Me
-I’d love to hear from you! Visit the **Contact** section on the website to reach out or connect with me for opportunities.
+I’d love to hear from you! Visit the **Contact** section on the website to reach out or connect with me.
