@@ -1,4 +1,4 @@
-import sami from "../assets/samiimg.png";
+import sami from "../assets/samiimg.jpg";
 import "./home.css";
 import React, { useState, useEffect } from "react";
 
@@ -42,7 +42,7 @@ export default function Home({isNightMode}) {
 
   const handleResumeClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1i5qSujPTSlFbp5hutkDFEAs4Q6QXpf5c/view?usp=sharing"
+      "https://drive.google.com/file/d/1i5nqSujPTSlFbp5hutkDFEAs4Q6QXpf5c/view?usp=sharing"
     );
   };
   
