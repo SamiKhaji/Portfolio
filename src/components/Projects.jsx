@@ -11,6 +11,7 @@ import pro3 from '../assets/pro3.png'
 import pro4 from '../assets/pro4.png'
 import pro5 from '../assets/pro5.png'
 import pro6 from '../assets/pro6.png'
+import pro7 from '../assets/pro7.png'
 const projectsData = [
   {
     title: "Brain Tumor Detection",
@@ -29,12 +30,22 @@ const projectsData = [
     image: pro2,
   },
   {
+    title: "Image Forgery Localization",
+    technologies: ["Deep Learning", "Image Forensics", "ELA", "YOLOv8", "Python"],
+    description: "A deep learning-based forensic model for detecting and localizing forged regions in images using CNN and Error Level Analysis (ELA). For document forgery detection, YOLOv8 is utilized, ensuring authenticity and combating misinformation.",
+    deploymentLink: "https://www.dropbox.com/scl/fi/9ahfyrwxgsdp9l24okdd5/thumbnail_PEIS-2025-Presentation-Certificate-043.jpg?rlkey=vdwu8lgwm0f6elqtponetddte&st=s4k54v73&dl=0",
+    status: "In Progress",
+    image: pro7
+}
+
+,
+  {
     title: "Portfolio Website",
     technologies: ["React JS","HTML", "CSS","JSX"],
     description: "A sleek and responsive portfolio app designed with React JS, ensuring seamless compatibility across all devices. It's a perfect showcase of my projects and skills, offering an intuitive and visually appealing experience.",
     githubLink: "hhttps://github.com/SamiKhaji/Portfolio",
     deploymentLink: "https://samikhaji.github.io/Portfolio/",
-    status: "In Progress",
+    status: "Completed",
     image:pro6,
   },
   {

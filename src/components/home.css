@@ -200,36 +200,60 @@
 
 @media (max-width: 480px) {
   
-  /* .home{
-    margin-top: 50px;
-  } */
+  .buttons {
+    width: 75%;
+    transform: translateX(20%);
+  }
 
-.buttons{
-  width: 75%;
-  transform: translateX(+20%);
-}
   .hero {
     margin-top: 20px;
     font-size: 25px;
   }
-  .welcome{
+
+  .welcome {
     margin-top: 25px;
     font-size: 15px;
   }
-  .aboutme{
+
+  .aboutme {
     margin-top: 15px;
     font-size: 14px;
   }
+
   .profile-pic img {
     width: 200px;
     height: 200px;
   }
+
   .resume-btn,  
   .quote-btn {  
     font-size: 0.8em;  
     padding: 6px 3%; 
   }  
+
+  a {
+    position: relative;
+    text-decoration: none;
+    color: inherit; /* Keeps default text color */
+    display: inline-block; /* Ensures the underline animates properly */
+  }
+  
+  a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust the distance from text */
+    width: 0;
+    height: 2px;
+    background-color: #f39c12;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  a:hover::after {
+    width: 100%;
+  }
 }
+
 
 @media (min-width: 1024px) {
   .home-container {
@@ -263,4 +287,26 @@
     padding-bottom: 50px;
   }
 
+}
+
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: inherit; /* Keeps default text color */
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust the distance from text */
+  width: 0;
+  height: 2px;
+  background-color: #f39c12;
+  transition: width 0.3s ease-in-out;
+}
+
+a:hover::after {
+  width: 100%;
 }

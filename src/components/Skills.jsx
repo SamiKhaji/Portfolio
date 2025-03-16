@@ -11,10 +11,15 @@ import sk from '../assets/sk.png'
 import gh from '../assets/git.png'
 import php from '../assets/php.png'
 import sl from "../assets/slit.svg"
+import exp from '../assets/exp.png'
+import node from "../assets/node.svg"
+import mongo from '../assets/mongo.svg'
 const skills = [
     { name: "HTML 5", icon: htmlicon }, 
     { name: "CSS 3", icon: cssicon },
     { name: "React", icon: ricon },
+    { name: "Express", icon: exp },
+    { name: "Node Js", icon: node },
     { name: "Python", icon: pyicon },
     { name: "CPP", icon: cpp },
     { name: "MySQL", icon: mysql },
@@ -24,6 +29,7 @@ const skills = [
     { name: "StreamLit", icon: sl },
     { name: "PHP", icon: php },
     { name: "Git", icon: gh },
+    {name:"Mongo db", icon:mongo},
   ];
 
 export default function Skills({isNightMode}){
