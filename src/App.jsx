@@ -12,7 +12,7 @@ import ReactGA from 'react-ga'
 
 
 function App() {
-  const [isNightMode, setIsNightMode] = useState(false
+  const [isNightMode, setIsNightMode] = useState(true
   ); // Track night mode state
 
   // Define MUI light and dark themes
