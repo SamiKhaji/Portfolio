@@ -49,7 +49,7 @@ export default function Header({ isNightMode, toggleNightMode }) {
               </span>
               <ul>
                 <li><Link to="home" smooth={true} duration={500} onClick={() => setIsMenuOpen(false)}>Home</Link></li>
-                <li><Link to="about" smooth={true} duration={500} onClick={() => setIsMenuOpen(false)}>About</Link></li>
+                {/* <li><Link to="about" smooth={true} duration={500} onClick={() => setIsMenuOpen(false)}>About</Link></li> */}
                 <li><Link to="education" smooth={true} duration={500} onClick={() => setIsMenuOpen(false)}>Education & Experience</Link></li>
                 <li><Link to="skills" smooth={true} duration={500} onClick={() => setIsMenuOpen(false)}>Skills</Link></li>
                 <li><Link to="projects" smooth={true} duration={500} onClick={() => setIsMenuOpen(false)}>Projects</Link></li>
