@@ -17,7 +17,7 @@ Welcome to my portfolio! This React-based website is designed to showcase my jou
 - **Styling:** CSS, Bootstrap
 - **Hosting:** GitHub Pages
 
-🚀 Steps to Run Your Project
+🚀 Steps to Run  Project
 To view the project, simply visit the hosted link:[Visit My Portfolio](https://samikhaji.github.io/Portfolio/)
 
 ## 📬 Connect With Me
