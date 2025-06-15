@@ -42,7 +42,7 @@ export default function Home({isNightMode}) {
 
   const handleResumeClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1i5qSujPTSlFbp5hutkDFEAs4Q6QXpf5c/view?usp=sharing"
+      "https://drive.google.com/file/d/1fy-KwEl_NOdC003aw8xaWBWMPZU16LAp/view?usp=sharing"
     );
   };
   

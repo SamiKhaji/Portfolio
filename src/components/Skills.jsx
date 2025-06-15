@@ -14,6 +14,7 @@ import sl from "../assets/slit.svg"
 import exp from '../assets/exp.png'
 import node from "../assets/node.svg"
 import mongo from '../assets/mongo.svg'
+import figma from '../assets/figma.svg'
 const skills = [
     { name: "HTML 5", icon: htmlicon }, 
     { name: "CSS 3", icon: cssicon },
@@ -30,6 +31,7 @@ const skills = [
     { name: "PHP", icon: php },
     { name: "Git", icon: gh },
     {name:"Mongo db", icon:mongo},
+    // {name:"Figma",icon:figma},
   ];
 
 export default function Skills({isNightMode}){

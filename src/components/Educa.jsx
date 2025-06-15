@@ -9,7 +9,7 @@ export default function Educa({isNightMode}) {
       title: "Amrita Vishwa Vidyapeetham",
       role: "Bachelor’s of Technology in Computer Science and Engineering",
       duration: "July 2021 - July 2025",
-      gpa: "GPA: 7.78/10",
+      gpa: "GPA: 7.89/10",
     },
     twelfth: {
       title: "Narayana Junior College",
